@@ -1,0 +1,154 @@
+:root {
+    --ff-primary: 'Roboto Mono', monospace;
+    ;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+h1 {
+    font-size: clamp(1.25rem, 1.786vw + 0.893rem, 2.5rem);
+    font-family: var(--ff-primary);
+    text-align: center;
+    margin-top: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border: 1px solid black;
+    max-width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.responsive-grid-box{
+    display: grid;
+    border: 1px solid black;
+    max-width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#grid-text {
+    font-family: var(--ff-primary);
+    font-weight: 800;
+}
+
+.input-div {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-black {
+    color: black;
+    background-color: black;
+    color: white;
+}
+
+
+.cell-custom {
+    border: 0.5px solid black;
+    width: 100%;
+}
+.responsive-cells{
+    border: 0.5px solid black;
+    width: 100%;
+}
+
+.flex-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.custom_btn-flex {
+    margin-bottom: 1rem;
+    padding: .5rem 1.3rem;
+    border-radius: 2rem;
+    border: none;
+
+}
+
+#btn-black {
+    background-color: black;
+    color: white;
+    font-family: var(--ff-primary);
+}
+
+#btn-black:hover {
+    background-color: rgb(42, 41, 41);
+}
+
+#btn-warm {
+    background-color: #DAA06D;
+    color: white;
+    font-family: var(--ff-primary);
+}
+
+#btn-warm:hover {
+    background-color: #f6b882;
+}
+
+#btn-cold {
+    background-color: #023e8a;
+    color: white;
+    font-family: var(--ff-primary);
+}
+
+#btn-cold:hover {
+    background-color: #0077b6;
+}
+
+#btn-clear:hover {
+    background-color: rgb(211, 207, 207);
+}
+
+.custom_btn-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#custom-color {
+    appearance: none;
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+#custom-color::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+#custom-color::-moz-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+#label {
+    margin-right: 1rem;
+    font-family: var(--ff-primary);
+    font-weight: 800;
+}
+
+
+
