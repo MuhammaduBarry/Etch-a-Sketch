@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <h1>Welcome to Etch-a-Sketch </h1>
+    <div class="main-container">
+        <div id="grid-container">
+
+        </div>
+        <div class="control-container">
+            <div class="input-div">
+                <input id="input-grid" type="range" value="16" min="1" max="100">
+                <span id="grid-text">Grid: 16 x 16</span>
+            </div>
+            <div class="flex-container">
+                <div class="custom_btn-color">
+                    <label for="custom-color" id="color-label"> Choose Color: </label>
+                    <input type="color" id="custom-color" name="custom-color" value="#000000">
+                </div>
+                <div class="flex-btn">
+                    <button type="button" class="custom_btn-flex" id="btn-black">black</button>
+                    <button type="button" class="custom_btn-flex" id="btn-warm">warm</button>
+                    <button type="button" class="custom_btn-flex" id="btn-cold">Cold</button>
+                    <button type="button" class="custom_btn-flex" id="btn-clear">Clear</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
