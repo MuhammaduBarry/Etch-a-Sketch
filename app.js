@@ -59,7 +59,7 @@ cells();
 
 
 
-//this is our responsive grid that listens to our input value and changes
+//this is our responsive cells that listens to our input value and changes
 const cellNum = () => {
     const responsiveCells = document.createElement('div');
 
@@ -93,6 +93,7 @@ const cellNum = () => {
     return responsiveCells;
 }
 
+// This creates responsive cells
 const createNewGrid = () => {
     const powerCell = inputValue() * inputValue();
 
